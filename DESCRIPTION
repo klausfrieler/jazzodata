@@ -1,0 +1,20 @@
+Package: jazzodata
+Type: Package
+Title: Data sets from the Jazzomat project
+Version: 0.1.0
+Authors@R: c(
+  person("Klaus", "Frieler", email = "klaus.frieler@ae.mpg.de", role = c("aut","cre"))
+  )
+Maintainer: Klaus Frieler <klaus.frieler@ae.mpg.de>
+Description: R data package containing some useful data sets derived from the Weimar Jazz Database, the Omnibook, and the Essen Folk Song Collection.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/klausfrieler/jazzodata
+Depends: 
+    R (>= 3.5.0),
+Suggests:
+    devtools (>= 1.13.6)
+RoxygenNote: 7.1.1
+Imports: 
+    tibble

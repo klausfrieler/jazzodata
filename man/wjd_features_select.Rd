@@ -3,22 +3,26 @@
 \docType{data}
 \name{wjd_features_select}
 \alias{wjd_features_select}
-\title{Weimar Jazz Database Scalar Features (selections)}
+\title{Weimar Jazz Database Core Scalar Features}
 \format{
 A tibble with 456 rows and 25 variables:
 \describe{
  \item{id}{Solo ID}
+ \item{title}{Title of solo track}
+ \item{full_title}{Full title of solo track (including solo number, alternate tracks etc.)}
+ \item{performer}{Performer of the solo)}
+ \item{style}{Style of the solo. One of TRADITIONAL, SWING,  BEBOP, COOL, HARDBOP, POSTBOP, FREE, FUSION, OTHER, MIX  or empty}
  \item{abs_int_range}{Size of largest interval}
  \item{art_range}{Range of articulation}
  \item{cdpcx_density_1}{Relative frequency of chordal roots}
- \item{cdpcx_density_10}{Relative frequency of chordal sharp thirds}
+ \item{cdpcx_density_B}{Relative frequency of chordal blue thirds}
  \item{cdpcx_density_3}{Relative frequency of chordal thirds}
  \item{cdpcx_density_5}{Relative frequency of chordal fifths}
  \item{cdpcx_density_6}{Relative frequency of chordal sixths}
  \item{cdpcx_density_b2}{Relative frequency of flat ninths}
  \item{cdpcx_density_T}{Relative frequency of sharp elevenths}
  \item{durclass_abs_entropy}{Entropy of absolute duration classes}
- \item{durclass_abs_hist_01_very_short}{Relative frequency of very short tones (< 16th notes in 120 bpm)}
+ \item{durclass_abs_very_short}{Relative frequency of very short tones (< 16th notes in 120 bpm)}
  \item{expressive}{Relative frequency of \strong{expressive} midlevel units}
  \item{f0_median_dev}{Median deviation from nominal 12-TET pitch}
  \item{fragment}{Relative frequency of \strong{fragment} midlevel units}
@@ -33,13 +37,47 @@ A tibble with 456 rows and 25 variables:
  \item{total_duration}{Total duration of solo (in sec)}
  \item{void}{Relative frequency of \strong{void} midlevel units}
 }
+
+A tibble with 456 rows and 25 variables:
+\describe{
+ \item{id}{Solo ID}
+ \item{title}{Title of solo track}
+ \item{full_title}{Full title of solo track (including solo number, alternate tracks etc.)}
+ \item{performer}{Performer of the solo)}
+ \item{style}{Style of the solo. One of TRADITIONAL, SWING,  BEBOP, COOL, HARDBOP, POSTBOP, FREE, FUSION, OTHER, MIX  or empty}
+ \item{cdpcx_density_1}{Relative frequency of chordal roots}
+ \item{cdpcx_density_B}{Relative frequency of chordal blue thirds}
+ \item{cdpcx_density_3}{Relative frequency of chordal thirds}
+ \item{cdpcx_density_5}{Relative frequency of chordal fifths}
+ \item{cdpcx_density_6}{Relative frequency of chordal sixths}
+ \item{cdpcx_density_b2}{Relative frequency of flat ninths}
+ \item{cdpcx_density_T}{Relative frequency of sharp elevenths}
+ \item{durclass_abs_entropy}{Entropy of absolute duration classes}
+ \item{expressive}{Relative frequency of \strong{expressive} midlevel units}
+ \item{fragment}{Relative frequency of \strong{fragment} midlevel units}
+ \item{int_bigram_entropy}{Entropy of interval combinations}
+ \item{lick}{Relative frequency of \strong{lick} midlevel units}
+ \item{line}{Relative frequency of \strong{line} midlevel units}
+ \item{pitch_entropy}{Entropy of pitch distribution}
+ \item{rhythm}{Relative frequency of \strong{rhythm} midlevel units}
+ \item{void}{Relative frequency of \strong{void} midlevel units}
+}
 }
 \usage{
+wjd_features_select
+
 wjd_features_select
 }
 \description{
 Subset of 24 features of \code{\link{wjd_features}} that have shown to be most indicative for historical stylistic change.
 There are also some additional relative frequencies of assorted midlevel units, not originally in \code{\link{wjd_features}}.
+Finally, there are five basic metadata fields.
+See \url{https://jazzomat.hfm-weimar.de/melospy/transformations.html} for further information.
+See also \url{https://jazzomat.hfm-weimar.de/feature_history_jazz/} for a interactive demonstration (Feature History of Jazz).
+
+Subset of 16 features of \code{\link{wjd_features}} that have shown to be most indicative for historical stylistic change and further cleaned of  redundancies.
+There are also some additional relative frequencies of assorted midlevel units, not originally in \code{\link{wjd_features}}.
+Finally, there are five basic metadata fields.
 See \url{https://jazzomat.hfm-weimar.de/melospy/transformations.html} for further information.
 See also \url{https://jazzomat.hfm-weimar.de/feature_history_jazz/} for a interactive demonstration (Feature History of Jazz).
 }

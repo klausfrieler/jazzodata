@@ -1,7 +1,7 @@
 Package: jazzodata
 Type: Package
 Title: Data sets from the Jazzomat project
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
   person("Klaus", "Frieler", email = "klaus.frieler@ae.mpg.de", role = c("aut","cre"))
   )

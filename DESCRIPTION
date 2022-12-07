@@ -15,6 +15,6 @@ Depends:
     R (>= 3.5.0),
 Suggests:
     devtools (>= 1.13.6)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.0
 Imports: 
     tibble

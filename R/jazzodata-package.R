@@ -17,6 +17,14 @@ NULL
 #' @format A tibble with 200,809 rows and 17 variables:
 #' \describe{
 #' \item{id}{Solo ID}
+#' \item{melid}{Numerical Solo ID}
+#' \item{event_id}{Numerical event ID}
+#' \item{beat_id}{WJD-wide Unique beat ID (<melid>_<bar>_<beat>)}
+#' \item{bar}{Bar number in solo}
+#' \item{beat}{Beat under bar, 1-based}
+#' \item{tatum}{Tatum position under beat, 1-based}
+#' \item{division}{Max division of current beat}
+#' \item{period}{Current beat period}
 #' \item{cdpcx_raw}{Raw output of note-wise CDPCX values}
 #' \item{cpc_raw}{Raw output (CPC values of all melody notes)}
 #' \item{durclass_abs_raw}{Raw output of duration classes (absolute mode)}
@@ -24,7 +32,8 @@ NULL
 #' \item{fuzzyint_raw}{Raw output (Fuzzy interval values over the full melody)}
 #' \item{articulation_raw}{Ratios of durations to interonset-intervals}
 #' \item{phrase_id_raw}{Sequence of event-wise phrase IDs}
-#' \item{chords_raw}{Sequence of event-wise chord symbols (as annotated and normalized)}
+#' \item{chords}{Sequence of event-wise chord symbols (as annotated and normalized)}
+#' \item{chords_raw}{Same as chords)}
 #' \item{int_raw}{ist of semitone intervals}
 #' \item{ioiclass_abs_raw}{Raw output of IOI classes of all melody notes (absolute mode)}
 #' \item{ioiclass_rel_raw}{Raw output of IOI classes of all melody notes (relative mode)}
@@ -65,9 +74,9 @@ NULL
 #'
 #' This data frame contains the most important features and meta-data for tonal analysis. Specifically, it contains a local
 #' scale degree annotation created with the corresponding functions from \code{parkR}-package.
-#' This also means, it contain fewer solos (429) than the WJD (456 solos), as not all solo have annotated chords that allow such an harmonic
+#' This also means, it contain fewer solos (444) than the WJD (456 solos), as not all solo have annotated chords that allow such an harmonic
 #' analysis
-#' @name wjd_tone
+#' @name wjd_tpc
 #' @docType data
 #' @format A tibble with 184,015 rows and 30 variables:
 #' \describe{

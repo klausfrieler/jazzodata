@@ -540,5 +540,5 @@ NULL
 #' \item{melstring}{Original melody code}
 #' \item{signature}{Signature(s) of solo}
 #' }
-NULL
+"esac_meta"
 

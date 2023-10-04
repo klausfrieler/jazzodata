@@ -29,3 +29,4 @@ esac_meta
 \description{
 Metadata for the  Essen Folk Song Collection (EFSC or ESAC) with 7.825 tunes (as provided by the Jazzomat project).
 }
+\keyword{datasets}

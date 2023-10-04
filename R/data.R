@@ -81,7 +81,7 @@ NULL
 #' @format A tibble with 184,015 rows and 30 variables:
 #' \describe{
 #' \item{id}{Solo ID}
-#' \item{cdpcx}{Extebded chordal diationic pitch classes}
+#' \item{cdpcx}{Extended chordal diationic pitch classes}
 #' \item{cpc}{Chordal diationic pitch classes}
 #' \item{bar}{Measure number}
 #' \item{beat}{Beat number in metrical annotations}

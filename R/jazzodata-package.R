@@ -109,7 +109,7 @@ NULL
 #' \item{tempoclass}{Tempo class. One of SLOW, MEDIUM SLOW, MEDIUM, MEDIUM UP, UP or empty}
 #' \item{tonality_type}{Tonality type of the composition. One of FUNCTIONAL, MODAL, COLOR, FREE, BLUES, JAZZ-BLUES or empty}
 #' }
-NULL
+"wjd_tpc"
 
 #' Weimar Jazz Database Scalar features
 #'
@@ -290,7 +290,7 @@ NULL
 #' \item{nPVI_dur}{Normalized pairwise variability index}
 #' \item{nPVI_ioi}{Normalized pairwise variability index}
 #' }
-NULL
+"wjd_features"
 
 #' Weimar Jazz Database Core Scalar Features
 #'
@@ -299,8 +299,8 @@ NULL
 #' Finally, there are five basic metadata fields.
 #' See \url{https://jazzomat.hfm-weimar.de/melospy/transformations.html} for further information.
 #' See also \url{https://jazzomat.hfm-weimar.de/feature_history_jazz/} for a interactive demonstration (Feature History of Jazz).
-#' @name wjd_features_select
-#' @usage wjd_features_select
+#' @name wjd_features_core
+#' @usage wjd_features_core
 #' @docType data
 #' @format A tibble with 456 rows and 25 variables:
 #' \describe{
@@ -334,7 +334,7 @@ NULL
 #'  \item{total_duration}{Total duration of solo (in sec)}
 #'  \item{void}{Relative frequency of \strong{void} midlevel units}
 #' }
-NULL
+"wjd_features_core"
 
 #' Weimar Jazz Database Hardcore Scalar Features
 #'
@@ -343,8 +343,8 @@ NULL
 #' Finally, there are five basic metadata fields.
 #' See \url{https://jazzomat.hfm-weimar.de/melospy/transformations.html} for further information.
 #' See also \url{https://jazzomat.hfm-weimar.de/feature_history_jazz/} for a interactive demonstration (Feature History of Jazz).
-#' @name wjd_features_select
-#' @usage wjd_features_select
+#' @name wjd_features_hardcore
+#' @usage wjd_features_hardcore
 #' @docType data
 #' @format A tibble with 456 rows and 25 variables:
 #' \describe{
@@ -370,7 +370,7 @@ NULL
 #'  \item{rhythm}{Relative frequency of \strong{rhythm} midlevel units}
 #'  \item{void}{Relative frequency of \strong{void} midlevel units}
 #' }
-NULL
+"wjd_features_hardcore"
 
 #' Weimar Jazz Database Metadata
 #'
@@ -416,7 +416,7 @@ NULL
 #' \item{harmony_template}{Underlying harmony template of composition}
 #' \item{solo_time}{Start/End of solo in surrounding track}
 #' }
-NULL
+"wjd_meta"
 
 #' Omnibook Transformations
 #'
@@ -448,7 +448,7 @@ NULL
 #' \item{mcm_48}{Position in metrical circle map with N=48 divisions}
 #' \item{pitch_raw}{Raw output (values of all melody notes)}
 #' }
-NULL
+"omnibook_transforms"
 
 #' Omnibook Metadata
 #'
@@ -492,7 +492,7 @@ NULL
 #' \item{harmony_template}{Underlying harmony template of composition}
 #' \item{solo_time}{Always NA}
 #' }
-NULL
+"omnibook_meta"
 
 #' Essen Folk Song Collection (Jazzomat version) Transformations
 #'
@@ -515,4 +515,4 @@ NULL
 #' \item{pitch_raw}{Raw output (values of all melody notes)}
 #' \item{tpc_raw}{Raw output of note-wise TPC values}
 #' }
-NULL
+"esac_transforms"

@@ -40,6 +40,11 @@ NULL
 #' \item{mcm_48}{Position in metrical circle map with N=48 divisions}
 #' \item{pc_raw}{Raw output (values for all melody notes)}
 #' \item{pitch_raw}{Raw output (values of all melody notes)}
+#' \item{g_phrase_id}{Global phrase id across WJD (<melid>_<phrase_id_raw>))}
+#' \item{phrase_pos}{Enumeration of positions in a phrase}
+#' \item{MLA_main_type}{Main type (line, lick, rhythm, melody, theme, quote, void, expressive, fragment) of containing mid-level unit}
+#' \item{MLA_length}{Length in number of notes of containing mid-level unit}
+#' \item{MLA_pos}{Enumeration of event position in containing mid-level unit}
 #' }
 "wjd_transforms"
 

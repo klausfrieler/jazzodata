@@ -18,7 +18,7 @@ A tibble with 184,015 rows and 30 variables:
 \item{tatum}{Tatum position under beat of current event}
 \item{pc}{Pitch class (C4 = 0)}
 \item{pitch}{MIDI-Pitch  (C4 = 60)}
-\item{melid}{Melid ( = numerical form od Solo ID), based on originalö 456 solos}
+\item{melid}{Numerical Solo ID}
 \item{beat_id}{Beat ID, unique enumeration of all WJD beats, format <melid>_<bar_number>_<beatnumber>}
 \item{form_name}{Form name of current form part}
 \item{chord}{Current chord}

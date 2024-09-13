@@ -8,6 +8,7 @@
 A tibble with 456 rows and 25 variables:
 \describe{
  \item{id}{Solo ID}
+ \item{melid}{Numerical Solo ID}
  \item{title}{Title of solo track}
  \item{full_title}{Full title of solo track (including solo number, alternate tracks etc.)}
  \item{performer}{Performer of the solo)}

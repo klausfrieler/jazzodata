@@ -19,6 +19,7 @@ A tibble with 132,325 rows and 17 variables:
 \item{chorus_id}{Id of chorus in solos}
 \item{bass}{Extimated bass pitch at this beat}
 \item{id}{Solo ID}
+\item{melid}{Numerical Solo ID}
 \item{chord_change}{Flag whether chord changes here.}
 \item{melid}{Integer version of solo ID (1 --456)}
 \item{beat_id}{Unique beat identfier (melid_bar_beat)}

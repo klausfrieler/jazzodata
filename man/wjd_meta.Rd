@@ -8,6 +8,7 @@
 A tibble with 456 rows and 33 variables:
 \describe{
  \item{id}{Solo ID}
+\item{melid}{Numerical Solo ID}
 \item{signature}{Annotated signature (possible more than one, space separate,  or FREE)}
 \item{number_notes}{Number of events}
 \item{performer}{Performer}

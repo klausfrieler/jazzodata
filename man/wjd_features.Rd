@@ -8,6 +8,7 @@
 A tibble with 45 rows and 169 variables:
 \describe{
 \item{id}{Solo ID}
+\item{melid}{Numerical Solo ID}
 \item{mean_length_arpeggio_ascending}{Mean length of ascending arpeggios}
 \item{mean_length_arpeggio_descending}{Mean length of descending arpeggios}
 \item{mean_length_arpeggio}{Mean length of arpeggios (mixed up/down thirds)}

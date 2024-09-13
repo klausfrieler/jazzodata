@@ -96,7 +96,7 @@ NULL
 #' \item{tatum}{Tatum position under beat of current event}
 #' \item{pc}{Pitch class (C4 = 0)}
 #' \item{pitch}{MIDI-Pitch  (C4 = 60)}
-#' \item{melid}{Melid ( = numerical form od Solo ID), based on originalö 456 solos}
+#' \item{melid}{Numerical Solo ID}
 #' \item{beat_id}{Beat ID, unique enumeration of all WJD beats, format <melid>_<bar_number>_<beatnumber>}
 #' \item{form_name}{Form name of current form part}
 #' \item{chord}{Current chord}
@@ -135,6 +135,7 @@ NULL
 #' \item{chorus_id}{Id of chorus in solos}
 #' \item{bass}{Extimated bass pitch at this beat}
 #' \item{id}{Solo ID}
+#' \item{melid}{Numerical Solo ID}
 #' \item{chord_change}{Flag whether chord changes here.}
 #' \item{melid}{Integer version of solo ID (1 --456)}
 #' \item{beat_id}{Unique beat identfier (melid_bar_beat)}
@@ -153,6 +154,7 @@ NULL
 #' @format A tibble with 45 rows and 169 variables:
 #' \describe{
 #' \item{id}{Solo ID}
+#' \item{melid}{Numerical Solo ID}
 #' \item{mean_length_arpeggio_ascending}{Mean length of ascending arpeggios}
 #' \item{mean_length_arpeggio_descending}{Mean length of descending arpeggios}
 #' \item{mean_length_arpeggio}{Mean length of arpeggios (mixed up/down thirds)}
@@ -337,6 +339,7 @@ NULL
 #' @format A tibble with 456 rows and 25 variables:
 #' \describe{
 #'  \item{id}{Solo ID}
+#'  \item{melid}{Numerical Solo ID}
 #'  \item{title}{Title of solo track}
 #'  \item{full_title}{Full title of solo track (including solo number, alternate tracks etc.)}
 #'  \item{performer}{Performer of the solo)}
@@ -381,6 +384,7 @@ NULL
 #' @format A tibble with 456 rows and 25 variables:
 #' \describe{
 #'  \item{id}{Solo ID}
+#'  \item{melid}{Numerical Solo ID}
 #'  \item{title}{Title of solo track}
 #'  \item{full_title}{Full title of solo track (including solo number, alternate tracks etc.)}
 #'  \item{performer}{Performer of the solo)}
@@ -414,6 +418,7 @@ NULL
 #' @format A tibble with 456 rows and 33 variables:
 #' \describe{
 #'  \item{id}{Solo ID}
+#' \item{melid}{Numerical Solo ID}
 #' \item{signature}{Annotated signature (possible more than one, space separate,  or FREE)}
 #' \item{number_notes}{Number of events}
 #' \item{performer}{Performer}
